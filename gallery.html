@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Gallery</title>
+</head>
+<body>
+    <h1>Multimedia Gallery</h1>
+    
+    <h2>Gambar</h2>
+    <img id="gallery-image" src="https://via.placeholder.com/300" alt="Gambar Tech" width="300"><br>
+    <button onclick="changeImage()">Ganti Gambar</button>
+    
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XKLHVDr8JXg?si=CU4uFWZS_tjMyzKx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h2>Audio</h2>
+    <audio id="audio-player" controls>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+        Browser Anda tidak mendukung tag audio.
+    </audio><br>
+    <button onclick="playAudio()">Putar Audio</button>
+    <button onclick="pauseAudio()">Hentikan Audio</button>
+    <button onclick="showInfo()">Info Audio</button>
+    
+    <br><br>
+    <a href="./index.html">Kembali ke Halaman Utama</a>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
