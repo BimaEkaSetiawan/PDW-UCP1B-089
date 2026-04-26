@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Anggota</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Form Pendaftaran Anggota</h1>
-    <form id="member-form">
+    <header>
+        <h1>Form Pendaftaran Anggota</h1>
+        <nav>
+            <a href="./index.html">Beranda</a>
+            <a href="./form.html">Form Anggota</a>
+            <a href="./gallery.html">Multimedia</a>
+        </nav>
+    </header>
+    <main>
+        <form id="member-form">
         <label for="name">Nama:</label>
         <input type="text" id="name" required><br><br>
         
@@ -24,10 +33,12 @@
         </select><br><br>
         
         <button type="submit">Submit</button>
-    </form>
-    <div id="result"></div>
-    <br>
-    <a href="./index.html">Kembali ke Halaman Utama</a>
+        </form>
+        <div id="result"></div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Tech Community. All rights reserved.</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

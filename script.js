@@ -57,10 +57,20 @@ function handleFormSubmit(event) {
     document.getElementById('member-form').reset();
 }
 
-// Fungsi untuk mengganti gambar
+// Array gambar dan counter untuk bergilir
+let imageArray = [
+    'https://via.placeholder.com/300?text=Tech+Community+1',
+    'https://via.placeholder.com/300?text=Tech+Community+2',
+    'https://via.placeholder.com/300?text=Tech+Community+3',
+    'https://via.placeholder.com/300?text=Tech+Community+4'
+];
+let imageIndex = 0;
+
+// Fungsi untuk mengganti gambar bergantian
 function changeImage() {
     const image = document.getElementById('gallery-image');
-    image.src = 'https://via.placeholder.com/300?text=New+Image';
+    image.src = imageArray[imageIndex];
+    imageIndex = (imageIndex + 1) % imageArray.length;
 }
 
 // Fungsi untuk memutar audio
